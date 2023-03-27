@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f8ff;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+div {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 246px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #d1d6ee;
+  background-color: white;
+  border-radius: 6px;
+  font-size: 18px;
+  padding-left: 8px;
+  overflow: hidden;
+}
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+input::placeholder {
+  color: #bbc1e1;
+  font-size: 16px;
+}
+
+input:focus {
+  animation: borderAnime 0.3s ease-in-out forwards;
+}
+
+label {
+  position: relative;
+}
+button {
+  position: absolute;
+  left: 220px;
+  top: 4px;
+  background-color: transparent;
+}
+
+.btn {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.chart-warp {
+  width: 700px;
+  height: 500px;
+}
+
+.imgsvg {
+  height: 34px;
+  width: 34px;
+}
+
+.resultElements {
+  display: none;
+}
+.resultElements[display="flex"] {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.result {
+  font-size: 90px;
+}
+span {
+  color: rgb(9, 133, 235);
+}
+@keyframes borderAnime {
+  from {
+    border-color: #d1d6ee;
+    box-shadow: none;
+  }
+  to {
+    border-color: #1951fc;
+    box-shadow: rgba(126, 126, 126, 0.19) 2px 3px 2px,
+      rgb(246 248 255) 13px 10px 6px;
+  }
+}
